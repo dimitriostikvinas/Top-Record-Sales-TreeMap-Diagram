@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3.0.0/dist/d3-scale-chromatic.min.js"></script>
+        <title>TreeMap Diagrams of various datasets</title>
+    </head>
+    
+    <body>
+        <div id ="links">
+            <a href="#" id = "videogames">Video Game Data Set</a> |
+            <a href="#" id = "movies">Movies Data Set</a> |
+            <a href="#" id = "kickstarter">Kickstarter Data Set</a>
+        </div>
+        <div id="container">
+            <h1 id="title"></h1>
+            <div id="description"></div>
+            <svg id="tree-map"></svg>
+            <svg id="legend" width="500"></svg>
+        </div>
+        <div id="tooltip"></div>
+        <script src="data-fetch.js"></script>
+        <script src="d3-treemap-diagram.js"></script>
+    </body>
+</html>
